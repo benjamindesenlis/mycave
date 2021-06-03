@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background */
+
+#bg {
+  position: fixed;
+  width: 100vw;
+  height: auto;
+  z-index: -10;
+}
+
+/************** Style nav **********************/
+
+nav {
+  background-color: rgb(63, 3, 23);
+  display: flex;
+  padding: 10px;
+}
+nav ul {
+  display: flex;
+  text-align: center;
+  width: 500px;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-left: 200px;
+  list-style-type: none;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+.navbar img {
+  height: 80px;
+  width: 190px;
+}
+
+/****************** Style de l'introduction  *******************/
+
+#logowhite {
+  height: 80px;
+  width: auto;
+  margin-top: 30px;
+}
+
+.intro {
+  margin: 0 auto;
+  text-align: center;
+  width: 70%;
+}
+.intro h2,
+p {
+  font-family: "Mate SC", serif;
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* Style du bouton deconnexion */
+button a {
+  text-decoration: none;
+  color: white;
+}
+button a:hover {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: rgb(255, 225, 225);
+}
+#off {
+  background: red;
+  color: white;
+  cursor: pointer;
+  padding: 10px 40px;
+  text-align: center;
+  border-radius: 30px;
+  margin-top: 10px;
+}
+
+/***************** CSS du grid ****************/
+
+.grid-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px 30px;
+}
+
+.grid-container img {
+  height: 250px;
+  width: 70px;
+  margin-top: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.right a,
+.left a {
+  text-decoration: none;
+  color: white;
+  background: rgba(255, 255, 255, 0.267);
+  padding: 7px 15px;
+}
+
+.right a:hover,
+.left a:hover {
+  background-color: rgba(255, 255, 255, 0.808);
+  font-size: 1.3rem;
+  color: rgba(0, 0, 0, 0.788);
+}
+
+/************ CSS des fiches de vins *************/
+
+.fichevin {
+  background-color: rgba(0, 0, 0, 0.507);
+  box-shadow: 5px -9px 15px 4px rgba(255, 255, 255, 0.65);
+  -webkit-box-shadow: 5px -9px 15px 4px rgba(255, 255, 255, 0.65);
+  -moz-box-shadow: 5px -9px 15px 4px rgba(255, 255, 255, 0.65);
+  display: flex;
+  padding: 25px;
+  color: white;
+  font-family: "Mate SC", serif;
+  font-size: 1.2rem;
+}
+.left {
+  width: 20%;
+}
+.right {
+  width: 80%;
+  text-align: center;
+}
+
+#description {
+  width: 20%;
+}
+
+.fichevin h3 {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 1.5rem;
+}
+
+/************ Style du formulaire de creation de vin  **************/
+
+#addcontainer {
+  width: 30%;
+  margin: 0 auto;
+  display: grid;
+  background-color: rgba(0, 0, 0, 0.507);
+  box-shadow: 5px -9px 15px 4px rgba(255, 255, 255, 0.65);
+  -webkit-box-shadow: 5px -9px 15px 4px rgba(255, 255, 255, 0.65);
+  -moz-box-shadow: 5px -9px 15px 4px rgba(255, 255, 255, 0.65);
+  padding: 20px;
+}
+
+.add-container h3 {
+  color: white;
+  text-align: center;
+}
+
+#addcontainer input {
+  text-align: center;
+  margin: 9px auto;
+}
+#addcontainer button {
+  width: 150px;
+  background: white;
+  margin: 0 auto;
+  padding: 5px 20px;
+}
+
+/* Creation de classe pour la taille des inputs */
+
+.low {
+  width: 250px;
+  text-align: center;
+  padding: 5px 15px;
+}
+
+.high {
+  width: 300px;
+  height: 150px;
+  text-align: center;
+  padding: 5px 15px;
+}
+/* Couleur prévisualisation présence d'une image */
+.select {
+  color: white;
+}
+/************ Style du formulaire de creation d'admin  **************/
+
+#registercontainer {
+  width: 30%;
+  margin: 0 auto;
+  display: grid;
+  background-color: rgba(0, 0, 0, 0.507);
+  box-shadow: 5px -9px 15px 4px rgba(255, 255, 255, 0.65);
+  -webkit-box-shadow: 5px -9px 15px 4px rgba(255, 255, 255, 0.65);
+  -moz-box-shadow: 5px -9px 15px 4px rgba(255, 255, 255, 0.65);
+  padding: 20px;
+}
+
+.register-container h3 {
+  color: white;
+  text-align: center;
+}
+
+#registercontainer input {
+  text-align: center;
+  margin: 9px auto;
+}
+#registercontainer button {
+  width: 150px;
+  background: white;
+  margin: 0 auto;
+  padding: 5px 20px;
+}
+
+/************ Style du footer  **************/
+
+.footer-container {
+  background-color: rgb(63, 3, 23);
+  height: 120px;
+  width: 100%;
+  margin-top: 50px;
+}
+.footer {
+  text-align: center;
+}
+.footer img {
+  height: 40px;
+  width: 110px;
+  margin-top: 20px;
+}
