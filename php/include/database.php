@@ -1,9 +1,9 @@
 <?php
 // Constantes d'environnements
-define("DBHOST", "localhost");
-define("DBUSER", "root");
-define("DBPASS", "");
-define("DBNAME", "mycave");
+define("DBHOST", "sql11.freemysqlhosting.net");
+define("DBUSER", "sql11416813");
+define("DBPASS", "TFLXNAqvgY");
+define("DBNAME", "sql11416813");
 // DSN de connexion - Data source name 
 $dsn = "mysql:dbname=" . DBNAME . ";host=" . DBHOST;
 

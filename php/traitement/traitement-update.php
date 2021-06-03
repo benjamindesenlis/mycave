@@ -1,12 +1,8 @@
 <?php
 session_start(); // On démarre la session AVANT toute chose
 
-try {
-    $db = new PDO('mysql:host=localhost;dbname=mycave;charset=utf8', 'root', '');
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (Exception $er) {
-    die('Erreur : ' . $er->getMessage());
-}
+require_once '../include/database.php';
+
 
 
 $data = [];

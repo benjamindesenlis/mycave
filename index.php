@@ -2,7 +2,7 @@
 session_start(); // On démarre la session AVANT toute chose
 ?>
 <?php
-$db = new PDO('mysql:host=localhost;dbname=mycave;charset=utf8', 'root', '');
+require_once '../include/database.php';
 $requete = "SELECT id, name, year, grapes, country, region, description, picture FROM vins";
 $resultat = $db->query($requete)->fetchAll(PDO::FETCH_ASSOC);
 
