@@ -81,16 +81,20 @@ if (!empty($_POST)) {
             $fileName = $temp[0] . "_" . $temp[2] . "." . $temp[1];
             $data['picture'] = strtolower($fileName);
 
-            if (file_exists("avatarfolder/" . $fileName)) {
+            if (file_exists("../../assets/img/avatarfolder/" . $fileName)) {
                 echo $fileName . " already exists. ";
             } else {
                 move_uploaded_file($_FILES["picture"]["tmp_name"], "../../assets/img/avatarfolder/" . $fileName);
             }
 
+            // if (!empty($data['picture'])) {
+            //     $sql = "UPDATE vins SET name = :name, year = :year, grapes = :grapes, country = :country, region = :region, description = :description, picture = :picture WHERE id = $id";
+            // } else {
+            //     $sql = "UPDATE vins SET name = :name, year = :year, grapes = :grapes, country = :country, region = :region, description = :description WHERE id = $id";
+            // }
 
 
             $sql = "UPDATE vins SET name = :name, year = :year, grapes = :grapes, country = :country, region = :region, description = :description, picture = :picture WHERE id = $id";
-
             $req = $db->prepare($sql);
             $req->execute($data);
             header('Location:../../administration.php');
