@@ -22,8 +22,8 @@ nav {
 }
 nav ul {
   display: flex;
-  text-align: center;
-  width: 500px;
+  text-align: right;
+  width: 700px;
   justify-content: space-around;
   margin-top: 20px;
   margin-left: 200px;
@@ -38,7 +38,9 @@ nav a {
   height: 80px;
   width: 190px;
 }
-
+#navbarNav {
+  justify-content: right;
+}
 /****************** Style de l'introduction  *******************/
 
 #logowhite {
