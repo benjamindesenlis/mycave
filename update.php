@@ -4,7 +4,7 @@ session_start(); // On démarre la session AVANT toute chose
 
 // verifier l'id si integer et non vide
 $id = htmlspecialchars($_GET['id']);
-$db = new PDO('mysql:host=localhost;dbname=mycave;charset=utf8', 'root', '');
+require_once './php/include/database.php';
 $requete = $db->query("SELECT id,name, year, grapes, country, region, description, picture FROM vins where id = $id");
 // $requete->execute($id);
 
