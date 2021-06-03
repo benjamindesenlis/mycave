@@ -1,7 +1,7 @@
 <?php
 session_start(); // On démarre la session AVANT toute chose
 
-require_once '../include/database.php';
+require_once './php/include/database.php';
 
 $requete = "SELECT id, name, year, grapes, country, region, description, picture FROM vins";
 $resultat = $db->query($requete)->fetchAll(PDO::FETCH_ASSOC);
